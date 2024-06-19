@@ -14,6 +14,7 @@
                     </div>
                 </div>
             <?php endwhile ?>
+            <?php echo paginate_links() ?>
         <?php else : ?>
             <p class="danger">Aucun article trouvé</p>
         <?php endif; ?>
