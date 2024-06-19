@@ -1,6 +1,9 @@
 <?php
-//met le titre a jour
-add_theme_support("title-tag");
+function manex_MiseEnPage(){
+    //affiche le titre
+    add_theme_support("title-tag");
+    add_theme_support("post-thumbnails");
+}
 
 //charger bootstrap
 function manex_Register_assets() {
@@ -11,5 +14,6 @@ function manex_Register_assets() {
     wp_enqueue_script("bootstrap");
     wp_enqueue_script("popper");
 }
+add_action("after_setup_theme", "manex_MiseEnPage");
 add_action("wp_enqueue_scripts", "manex_Register_assets");
 ?>
