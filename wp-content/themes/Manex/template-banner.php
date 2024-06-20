@@ -6,7 +6,7 @@ Template Post Type: page, post
 ?>
 <?php get_header(); ?>
 <style>
-    html {background: url(<?php echo get_template_directory_uri() ?>/src/img.banner.jpg) no-repeat center fixed;}
+    html {background-image: url("<?php echo get_template_directory_uri() ?>/src/img.banner.jpg") no-repeat center fixed;}
 </style>
 <div class="container">
     <?php if (have_posts()) : ?>
